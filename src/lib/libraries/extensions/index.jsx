@@ -146,6 +146,17 @@ const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
 const IsLiveTests = urlParams.has('livetests');
 
 const menuItems = [
+    // TL4K
+    {
+        name: 'TL4k-Extended Pen',
+        extensionId: 'tl4kSuperPen',
+        iconURL: penIconURL,
+        insetIconURL: penInsetIconURL,
+        tags: ['tl4k'],
+        description: 'TechLAB4Kids extended pen',
+        featured: true
+    },
+
     {
         name: (
             <FormattedMessage
@@ -365,46 +376,10 @@ const menuItems = [
         name: 'PenguinGPT',
         extensionId: 'https://editor.snail-ide.com/penguingpt.js',
         collaborator: 'cicerorph & Anonymous-cat1',
-        iconURL: 'https://rubyteam.tech/cdn/thumbnails/penguingpt.png',
+        iconURL: 'https://extensions.penguinmod.com/images/MubiLop/penguingpt.png',
         tags: ['turbowarp', 'ai'],
         description: 'ChatGPT in Snail IDE/PenguinMod has been taken to a whole new level with PenguinGPT. (This replaces the ChatGPT extension and is backwards compatible)',
         featured: true
-    },
-    {
-        name: 'Gemini',
-        extensionId: 'https://rubyteam.tech/cdn/extensions/geminiai.js',
-        collaborator: 'cicerorph',
-        iconURL: 'https://rubyteam.tech/cdn/thumbnails/turbogemini.webp',
-        tags: ['turbowarp', 'ai'],
-        description: 'Use Google Gemini in your projects',
-        featured: true
-    },
-    {
-        name: 'Analytics',
-        extensionId: 'https://rubyteam.tech/cdn/extensions/analytics.js',
-        collaborator: 'cicerorph',
-        iconURL: 'https://rubyteam.tech/cdn/thumbnails/analytics.webp',
-        tags: ['turbowarp', 'penguinmod'],
-        description: 'Measure how many people are using your projects using the Ruby API.',
-        featured: true
-    },
-    {
-        name: 'PenguinPedia',
-        extensionId: 'https://rubyteam.tech/cdn/extensions/penguinpedia.js',
-        collaborator: 'Gen1X',
-        iconURL: 'https://rubyteam.tech/cdn/thumbnails/penguinpedia.webp',
-        tags: ['penguinmod'],
-        description: 'Get a lot of data from Wikipedia, like definitions and images!',
-        featured: true,
-    },
-    {
-        name: '1MB Shortener',
-        extensionId: 'https://rubyteam.tech/cdn/extensions/1mb.js', // update reference once file names are updated
-        tags: ['turbowarp'],
-        iconURL: 'https://rubyteam.tech/cdn/thumbnails/1mb.svg',
-        description: 'Using 1mb Api you can now share links without it being long!',
-        featured: true,
-        collaborator: 'cicerorph'
     },
     {
         name: 'Random Utils',
@@ -1664,7 +1639,7 @@ if (IsLocal || IsLiveTests) {
             featured: true,
             internetConnectionRequired: true
         },
-        
+
     {
         name: 'Discord Auth',
         extensionId: 'https://editor.snail-ide.com/discord.js',
