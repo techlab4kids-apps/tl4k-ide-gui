@@ -1,5 +1,5 @@
 {
-  "name": "TL4K scratch-gui",
+  "name": "tl4k-ide-gui",
   "version": "0.1.0",
   "description": "GraphicaL User Interface for creating and running Scratch 3.0 projects",
   "main": "./dist/scratch-gui.js",
@@ -86,7 +86,7 @@
     "scratch-blocks": "github:Snail-IDE/snail-blocks#develop-builds",
     "scratch-paint": "github:Snail-IDE/Snail-IDE-Paint#develop",
     "scratch-render": "github:techlab4kids-apps/tl4k-scratch-render#develop",
-    "scratch-render-fonts": "1.0.0-prerelease.20210401210003",
+    "scratch-render-fonts": "github:TurboWarp/scratch-render-fonts#master",
     "scratch-storage": "github:PenguinMod/PenguinMod-Storage#develop",
     "scratch-svg-renderer": "github:TurboWarp/scratch-svg-renderer#develop",
     "scratch-vm": "github:techlab4kids-apps/tl4k-scratch-vm#develop",

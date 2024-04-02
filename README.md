@@ -1,7 +1,7 @@
 scratch-gui modified for use in [TurboWarp](https://turbowarp.org/) then modified for use in [PenguinMod](https://penguinmod.github.io/penguinmod.github.io/) then modified for use in [Snail IDE](https://github.com/Snail-IDE/snail-ide.github.io) 😀
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/snail-ide/snail-ide.github.io/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/snail-ide/snail-ide.github.io/) then modified for use in SnailMod
 
-Snail IDE: src/lib/default-project/592bae6f8bb9c8d88401b54ac431f7b6.svg is based on [Twemoji](https://twemoji.twitter.com/) and is licensed under CC BY 4.0 https://creativecommons.org/licenses/by/4.0/   
+TL4K IDE
 ## Setup
 to run snail ide on your computer, you'll need nvm (node version manager).<br>
 type ``nvm install 16`` then ``nvm use 16`` in your terminal. (if your on windows, accept the uac prompts)<br>
@@ -9,6 +9,14 @@ then your gonna need pnpm. there may be other ways to install snail ides depende
 after you install pnpm, clone the snail ide gui with ``git clone https://github.com/snail-ide/snail-ide.github.io``.<br>
 then run ``pnpm i --shamefully-hoist``. after that, you can type ``npm start`` or ``pnpm start`` or ``yarn start`` if you have yarn.<br/>
 if you want to use node 17+ , you'll have to add the enviroment variable `NODE_OPTIONS` with the content `--openssl-legacy-provider` before the start command.<br/>
+
+## Link dependencies
+In tl4k-ide-vm folder run ``pnpm link --global``
+
+In tl4k-ide-render folder run ``pnpm link --global``
+
+In tl4k-ide-ide folder run ``pnpm link --global tl4k-ide-render`` and ``pnpm link --global tl4k-ide-vm``
+
 
 ## License
 
