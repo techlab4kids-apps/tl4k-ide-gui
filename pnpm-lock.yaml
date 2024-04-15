@@ -83,9 +83,6 @@ dependencies:
   lodash.throttle:
     specifier: 4.0.1
     version: 4.0.1
-  md:
-    specifier: github:PenguinMod/PenguinMod-MarkDown#master
-    version: github.com/PenguinMod/PenguinMod-MarkDown/ae5971c234a9d13a8886bb3edcec3df5ceffab34
   minilog:
     specifier: 3.1.0
     version: 3.1.0
@@ -117,13 +114,13 @@ dependencies:
     specifier: ^0.5.1
     version: 0.5.1
   react:
-    specifier: ^16.14.0
+    specifier: ^16.0.0
     version: 16.14.0
   react-contextmenu:
     specifier: 2.9.4
     version: 2.9.4(prop-types@15.8.1)(react-dom@16.14.0)(react@16.14.0)
   react-dom:
-    specifier: ^16.14.0
+    specifier: ^16.0.0
     version: 16.14.0(react@16.14.0)
   react-draggable:
     specifier: 3.0.5
@@ -13070,14 +13067,6 @@ packages:
       audio-context: 1.0.1
       minilog: 3.1.0
       startaudiocontext: 1.2.1
-    dev: false
-
-  github.com/PenguinMod/PenguinMod-MarkDown/ae5971c234a9d13a8886bb3edcec3df5ceffab34:
-    resolution: {tarball: https://codeload.github.com/PenguinMod/PenguinMod-MarkDown/tar.gz/ae5971c234a9d13a8886bb3edcec3df5ceffab34}
-    name: md
-    version: 0.6.0
-    dependencies:
-      slugo: 0.2.3
     dev: false
 
   github.com/PenguinMod/PenguinMod-Parser/c56c7aad93f71aa5d1a126bae1d5e663c161e8eb:
