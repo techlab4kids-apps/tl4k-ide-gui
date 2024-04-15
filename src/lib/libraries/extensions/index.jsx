@@ -107,7 +107,15 @@ import cursorThumb from './penguinmod/extensions/cursor.svg';
 // LilyMakesThings 🙏
 // import lmsMcUtilsIcon from './penguinmod/extensions/mcutils.png';
 
-// more icons so they arent just red when the extension color is not red
+// TL4K
+import tl4kMqttExtensionBackground from './techlab4kids/techlab4kids_sfondo_mqtt.png';
+import tl4kExtensionBackground from './techlab4kids/techlab4kids_sfondo.png';
+import tl4kExtensionBackgroundIcon from './techlab4kids/techlab4kids_sfondo.png';
+import tl4kExtensionIcon from './techlab4kids/techlab4kids.png';
+import tl4kExtensionAgruminoIcon from './techlab4kids/LifelyLogo.png';
+import tl4kExtensionMqttIcon from './techlab4kids/mqtt.org-piccolo.png';
+
+// more icons so they aren't just red when the extension color is not red
 import gsaTempVariablesExtensionIcon from './penguinmod/extensions/tempvariables.png';
 import gsaColorUtilExtensionIcon from './penguinmod/extensions/colorutil.png';
 import jgIframeExtensionIcon from './penguinmod/extensions/iframe.png';
@@ -150,10 +158,28 @@ const menuItems = [
     {
         name: 'TL4k-Extended Pen',
         extensionId: 'tl4kSuperPen',
-        iconURL: penIconURL,
+        iconURL: tl4kExtensionBackground,
         insetIconURL: penInsetIconURL,
         tags: ['tl4k'],
         description: 'TechLAB4Kids extended pen',
+        featured: true
+    },
+    {
+        name: 'TL4k Mqtt',
+        extensionId: 'mqttClient',
+        iconURL: tl4kMqttExtensionBackground,
+        insetIconURL: tl4kExtensionMqttIcon,
+        tags: ['tl4k'],
+        description: 'TechLAB4Kids mqtt client',
+        featured: true
+    },
+    {
+        name: 'TL4k Agrumino (by Lifely) Mqtt',
+        extensionId: 'mqttAgruminoClient',
+        iconURL: tl4kMqttExtensionBackground,
+        insetIconURL: tl4kExtensionAgruminoIcon,
+        tags: ['tl4k'],
+        description: 'TechLAB4Kids Agrumino (byLifely)',
         featured: true
     },
 

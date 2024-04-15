@@ -10,7 +10,6 @@ var defaultsdeep = require('lodash.defaultsdeep')
 //var GhPagesWebpackPlugin = require('gh-pages-webpack-plugin');
 
 
-
 // PostCss
 var autoprefixer = require('autoprefixer');
 var postcssVars = require('postcss-simple-vars');
@@ -39,12 +38,12 @@ const base = {
         // allows ROUTING_STYLE=wildcard to work properly
         historyApiFallback: {
             rewrites: [
-                { from: /^\/\d+\/?$/, to: '/index.html' },
-                { from: /^\/\d+\/fullscreen\/?$/, to: '/fullscreen.html' },
-                { from: /^\/\d+\/editor\/?$/, to: '/editor.html' },
-                { from: /^\/\d+\/playground\/?$/, to: '/playground.html' },
-                { from: /^\/\d+\/embed\/?$/, to: '/embed.html' },
-                { from: /^\/addons\/?$/, to: '/addons.html' }
+                {from: /^\/\d+\/?$/, to: '/index.html'},
+                {from: /^\/\d+\/fullscreen\/?$/, to: '/fullscreen.html'},
+                {from: /^\/\d+\/editor\/?$/, to: '/editor.html'},
+                {from: /^\/\d+\/playground\/?$/, to: '/playground.html'},
+                {from: /^\/\d+\/embed\/?$/, to: '/embed.html'},
+                {from: /^\/addons\/?$/, to: '/addons.html'}
             ]
         }
     },
@@ -62,52 +61,63 @@ const base = {
         }
     },
     module: {
-        rules: [{
-            test: /\.jsx?$/,
-            loader: 'babel-loader',
-            include: [
-                path.resolve(__dirname, 'src'),
-                /node_modules[\\/]scratch-[^\\/]+[\\/]src/,
-                /node_modules[\\/]pify/,
-                /node_modules[\\/]@vernier[\\/]godirect/
-            ],
-            options: {
-                // Explicitly disable babelrc so we don't catch various config
-                // in much lower dependencies.
-                babelrc: false,
-                plugins: [
-                    ['react-intl', {
-                        messagesDir: './translations/messages/'
-                    }]],
-                presets: ['@babel/preset-env', '@babel/preset-react']
-            }
-        },
-        {
-            test: /\.css$/,
-            use: [{
-                loader: 'style-loader'
-            }, {
-                loader: 'css-loader',
-                options: {
-                    modules: true,
-                    importLoaders: 1,
-                    localIdentName: '[name]_[local]_[hash:base64:5]',
-                    camelCase: true
-                }
-            }, {
-                loader: 'postcss-loader',
-                options: {
-                    ident: 'postcss',
-                    plugins: function () {
-                        return [
-                            postcssImport,
-                            postcssVars,
-                            autoprefixer
-                        ];
+        rules: [
+            {
+                test: /\.esm\.js$/,
+
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
                     }
                 }
+            },
+            {
+                test: /\.jsx?$/,
+                loader: 'babel-loader',
+                include: [
+                    path.resolve(__dirname, 'src'),
+                    /node_modules[\\/]scratch-[^\\/]+[\\/]src/,
+                    /node_modules[\\/]pify/,
+                    /node_modules[\\/]@vernier[\\/]godirect/
+                ],
+                options: {
+                    // Explicitly disable babelrc so we don't catch various config
+                    // in much lower dependencies.
+                    babelrc: false,
+                    plugins: [
+                        ['react-intl', {
+                            messagesDir: './translations/messages/'
+                        }]],
+                    presets: ['@babel/preset-env', '@babel/preset-react']
+                }
+            },
+            {
+                test: /\.css$/,
+                use: [{
+                    loader: 'style-loader'
+                }, {
+                    loader: 'css-loader',
+                    options: {
+                        modules: true,
+                        importLoaders: 1,
+                        localIdentName: '[name]_[local]_[hash:base64:5]',
+                        camelCase: true
+                    }
+                }, {
+                    loader: 'postcss-loader',
+                    options: {
+                        ident: 'postcss',
+                        plugins: function () {
+                            return [
+                                postcssImport,
+                                postcssVars,
+                                autoprefixer
+                            ];
+                        }
+                    }
+                }]
             }]
-        }]
     },
     plugins: []
 };
