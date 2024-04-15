@@ -3,7 +3,7 @@ import darkModeCSS from '!raw-loader!./tw-theme-dark.css';
 
 const THEME_KEY = 'tw:theme';
 
-const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const darkMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
 
 export const getInitialDarkMode = () => {
     try {

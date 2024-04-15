@@ -3,7 +3,7 @@
     background: #111;
     color: #eee;
     color-scheme: dark;
-    /* see colors.csss */
+    /* see colors.css */
     --ui-primary: rgb(17, 17, 17);
     --ui-secondary: rgb(30, 30, 30);
     --ui-tertiary: rgb(46, 46, 46);
