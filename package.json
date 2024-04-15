@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@turbowarp/scratch-l10n": "^3.1000.20230326022803",
-    "@turbowarp/scratch-svg-renderer": "github:TurboWarp/scratch-svg-renderer#develop",
+    "@turbowarp/scratch-svg-renderer": "github:techlab4kids-apps/tl4k-scratch-svg-renderer#develop",
     "arraybuffer-loader": "^1.0.8",
     "autoprefixer": "^9.8.8",
     "base64-loader": "1.0.0",
@@ -88,7 +88,7 @@
     "scratch-render": "github:techlab4kids-apps/tl4k-ide-render#develop",
     "scratch-render-fonts": "github:TurboWarp/scratch-render-fonts#master",
     "scratch-storage": "github:PenguinMod/PenguinMod-Storage#develop",
-    "scratch-svg-renderer": "github:TurboWarp/scratch-svg-renderer#develop",
+    "scratch-svg-renderer": "github:techlab4kids-apps/tl4k-scratch-svg-renderer#develop",
     "scratch-vm": "github:techlab4kids-apps/tl4k-ide-vm#develop",
     "startaudiocontext": "1.2.1",
     "style-loader": "^0.23.1",

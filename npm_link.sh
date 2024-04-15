@@ -13,6 +13,6 @@ mv node_modules/tl4k-ide-vm node_modules/scratch-vm
 mv node_modules/scratch-render node_modules/scratch-render.old
 mv node_modules/tl4k-ide-render node_modules/scratch-render
 
-npm link tl4k-ide-render tl4k-ide-vm
+#npm link tl4k-ide-render tl4k-ide-vm
 
 # webpack-dev-server
