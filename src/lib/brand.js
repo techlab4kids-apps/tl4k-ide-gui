@@ -1,1 +1,1 @@
-export const APP_NAME = 'Snail IDE';
+export const APP_NAME = 'TL4K IDE';

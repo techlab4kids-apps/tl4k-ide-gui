@@ -139,7 +139,7 @@ module.exports = [
             'credits': './src/playground/credits/credits.jsx'
         },
         output: {
-            path: path.resolve(__dirname, 'build')
+            path: path.resolve(__dirname, '../techlab4kids-apps.github.io')
         },
         module: {
             rules: base.module.rules.concat([
@@ -173,28 +173,28 @@ module.exports = [
                 chunks: ['editor'],
                 template: 'src/playground/index.ejs',
                 filename: 'editor.html',
-                title: 'Snail IDE - A mod of PenguinMod',
+                title: 'TL4K IDE - A mod of Snail IDE',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
                 chunks: ['playground'],
                 template: 'src/playground/index.ejs',
                 filename: 'playground.html',
-                title: 'Snail IDE - A mod of PenguinMod',
+                title: 'TL4K IDE - A mod of Snail IDE',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
                 chunks: ['player'],
                 template: 'src/playground/index.ejs',
                 filename: 'index.html',
-                title: 'Snail IDE - A mod of PenguinMod',
+                title: 'TL4K IDE - A mod of Snail IDE',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
                 chunks: ['fullscreen'],
                 template: 'src/playground/index.ejs',
                 filename: 'fullscreen.html',
-                title: 'Snail IDE - A mod of PenguinMod',
+                title: 'TL4K IDE - A mod of Snail IDE',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
