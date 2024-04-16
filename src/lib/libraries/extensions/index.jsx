@@ -160,8 +160,27 @@ const menuItems = [
         extensionId: 'tl4kSuperPen',
         iconURL: tl4kExtensionBackground,
         insetIconURL: penInsetIconURL,
-        tags: ['tl4k'],
+        tags: ['tl4kmod'],
         description: 'TechLAB4Kids extended pen',
+        featured: true
+    },
+
+    {
+        name: 'TL4k Blocks',
+        extensionId: 'techLAB4KidsBlocks',
+        iconURL: tl4kExtensionBackground,
+        insetIconURL: tl4kExtensionMqttIcon,
+        tags: ['tl4kmod'],
+        description: 'TechLAB4Kids blocks',
+        featured: true
+    },
+    {
+        name: 'TL4k Simplified Blocks',
+        extensionId: 'techLAB4KidsSimplifiedBlocks',
+        iconURL: tl4kExtensionBackground,
+        insetIconURL: tl4kExtensionMqttIcon,
+        tags: ['tl4kmod'],
+        description: 'TechLAB4Kids simplified blocks',
         featured: true
     },
     {
@@ -169,7 +188,7 @@ const menuItems = [
         extensionId: 'mqttClient',
         iconURL: tl4kMqttExtensionBackground,
         insetIconURL: tl4kExtensionMqttIcon,
-        tags: ['tl4k'],
+        tags: ['tl4kmod'],
         description: 'TechLAB4Kids mqtt client',
         featured: true
     },
@@ -178,7 +197,7 @@ const menuItems = [
         extensionId: 'mqttAgruminoClient',
         iconURL: tl4kMqttExtensionBackground,
         insetIconURL: tl4kExtensionAgruminoIcon,
-        tags: ['tl4k'],
+        tags: ['tl4kmod'],
         description: 'TechLAB4Kids Agrumino (byLifely)',
         featured: true
     },

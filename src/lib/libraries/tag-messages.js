@@ -141,6 +141,11 @@ export default defineMessages({
         description: 'Tag for filtering a library for swords',
         id: 'gui.libraryTags.swords'
     },
+    tl4kmod: {
+        defaultMessage: 'TL4K IDE',
+        description: 'Tag for filtering a library by TL4K IDE',
+        id: 'gui.libraryTags.tl4kmod'
+    },
     penguinmod: {
         defaultMessage: 'PenguinMod/Snail IDE',
         description: 'Tag for filtering a library by PenguinMod/Snail IDE',

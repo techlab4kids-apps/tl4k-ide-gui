@@ -443,10 +443,10 @@ class MenuBar extends React.Component {
             >
                 <div className={styles.mainMenu}>
                     <div className={styles.fileGroup}>
-                            <a href="https://www.snail-ide.com" target="_blank">
+                            <a href="https://techlab4kids.it" target="_blank">
                             <div className={classNames(styles.menuBarItem, styles.hoverable)}>
                                 <img
-                                    alt="Snail IDE"
+                                    alt="TL4K IDE"
                                     className={classNames(styles.scratchLogo, {
                                         [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
                                     })}
