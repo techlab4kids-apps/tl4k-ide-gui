@@ -114,6 +114,7 @@ import tl4kExtensionBackgroundIcon from './techlab4kids/techlab4kids_sfondo.png'
 import tl4kExtensionIcon from './techlab4kids/techlab4kids.png';
 import tl4kExtensionAgruminoIcon from './techlab4kids/LifelyLogo.png';
 import tl4kExtensionMqttIcon from './techlab4kids/mqtt.org-piccolo.png';
+import tl4kExtensionLed from './techlab4kids/tl4kExtensionLed.jpg'
 
 // more icons so they aren't just red when the extension color is not red
 import gsaTempVariablesExtensionIcon from './penguinmod/extensions/tempvariables.png';
@@ -164,7 +165,15 @@ const menuItems = [
         description: 'TechLAB4Kids extended pen',
         featured: true
     },
-
+    {
+        name: 'TL4k Led Stick',
+        extensionId: 'techLAB4KidsLedStick',
+        iconURL: tl4kExtensionLed,
+        insetIconURL: tl4kExtensionMqttIcon,
+        tags: ['tl4kmod'],
+        description: 'TechLAB4Kids led stick',
+        featured: true
+    },
     {
         name: 'TL4k Blocks',
         extensionId: 'techLAB4KidsBlocks',
